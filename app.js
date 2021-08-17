@@ -11,7 +11,8 @@ let oneEuroIs = {
 }
 
 function fromDollarToYen (dollars) {
-    return dollars * oneEuroIs.JPY;
+    let euros_from_dollars = dollars/oneEuroIs.USD;
+    return euros_from_dollars * oneEuroIs.JPY;
 }
 
 function fromEuroToDollar (euros) {
@@ -19,5 +20,6 @@ function fromEuroToDollar (euros) {
 }
 
 function fromYenToPound (yens) {
-    return yens * oneEuroIs.GBP;
+    let euros_from_yens = yens/oneEuroIs.JPY;
+    return euros_from_yens * oneEuroIs.GBP;
 }
