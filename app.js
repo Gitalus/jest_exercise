@@ -1,10 +1,8 @@
+module.exports = { fromYenToPound, sum, fromDollarToYen, fromEuroToDollar };
+
 function sum(a, b) {
     return a + b;
 }
-
-console.log(sum(7, 3));
-
-module.exports = { sum };
 
 let oneEuroIs = {
     "JPY": 127.9,
@@ -19,6 +17,7 @@ function fromDollarToYen (dollars) {
 function fromEuroToDollar (euros) {
     return euros * oneEuroIs.USD;
 }
+
 function fromYenToPound (yens) {
     return yens * oneEuroIs.GBP;
 }
