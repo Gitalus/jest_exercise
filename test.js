@@ -15,3 +15,7 @@ test("One euro should be 1.206 dollars", function(){
 test("1.2 dollars should be 127.9 yens", function () {
     expect(fromDollarToYen(4.5)).toBe(479.625); // 4.5 dolares son 3.75 euros, y 3.75 euros deberían ser = (3.75 * 127.9)
 });
+
+test("127.9 yens should be 0.8 pounds", function () {
+    expect(fromYenToPound(767.4)).toBe(4.8); // 767.4 yens son 6 euros, y 6 euros deberían ser (6 * 0.8) pounds
+})
